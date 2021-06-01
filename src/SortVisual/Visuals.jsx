@@ -135,25 +135,27 @@ export default class Visuals extends React.Component {
                 }, i * ANIMATION_SPEED_MS)
             }
             else {
+		    
                 if(animations[i].length === 4) {
-					setTimeout(() => {
+			setTimeout(() => {
 
-						const [barOneIdx, barTwoIdx, newHeight1, newHeight2] = animations[i]
-						const barOneStyle = arrayBars[barOneIdx].style
-						const barTwoStyle = arrayBars[barTwoIdx].style
-						barOneStyle.height = `${newHeight2}px`
-						barTwoStyle.height = `${newHeight1}px`
-					}, i * ANIMATION_SPEED_MS)
-                }
-				else {
+				const [barOneIdx, barTwoIdx, newHeight1, newHeight2] = animations[i]
+				const barOneStyle = arrayBars[barOneIdx].style
+				const barTwoStyle = arrayBars[barTwoIdx].style
+				barOneStyle.height = `${newHeight2}px`
+				barTwoStyle.height = `${newHeight1}px`
+				
+		}, i * ANIMATION_SPEED_MS)
+            }
+		else {
 
-					setTimeout(() => {
-					
-						const [barOneIdx, newHeight] = animations[i]
-						const barOneStyle = arrayBars[barOneIdx].style
-						barOneStyle.height = `${newHeight}px`
-					}, i * ANIMATION_SPEED_MS)
-				}	
+			setTimeout(() => {
+		
+				const [barOneIdx, newHeight] = animations[i]
+				const barOneStyle = arrayBars[barOneIdx].style
+				barOneStyle.height = `${newHeight}px`
+			}, i * ANIMATION_SPEED_MS)
+		}	
             }
         }
     }
