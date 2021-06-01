@@ -1,0 +1,21 @@
+.array-container {
+    position: absolute;
+    left: 50px;
+}
+
+.array-bar {
+    width: 5px;
+    display: inline-block;
+    margin: 20px 1px; 
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
