@@ -209,13 +209,14 @@ export default class Visuals extends React.Component {
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
         
         <Nav className="ml-auto">
-            <button onClick={() => this.mergeSort()}>Merge Sort</button>
+            <button onClick={() => this.mergeSort()}>Merge Sort: O(n log(n))</button>
             &nbsp;&nbsp;&nbsp; 
-            <button onClick={() => this.insertionSort()}>Insertion Sort</button>
+            <button onClick={() => this.insertionSort()}>Insertion Sort: O(n²)</button>
             &nbsp;&nbsp;&nbsp; 
-            <button onClick={() => this.heapSort()}>Heap Sort</button>
+            <button onClick={() => this.heapSort()}>Heap Sort: O(n log(n))</button>
             &nbsp;&nbsp;&nbsp; 
-            <button onClick={() => this.bubbleSort()}>Bubble Sort</button>
+            <button onClick={() => this.bubbleSort()}>Bubble Sort: O(n²)</button>
+            
         </Nav>
         
     </Navbar>
